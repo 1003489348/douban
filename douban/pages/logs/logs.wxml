@@ -1,0 +1,76 @@
+<view class="top">
+<navigator url='../rpt/rpt' hover-class="none">
+<image src="../../image/1.jpg" style="width:100%;height:260rpx;"></image>
+</navigator>
+<navigator url='../top250/top250' hover-class="none">
+<image src="../../image/2.jpg" style="width:100%;height:260rpx;"></image>
+<image src="../../image/3.jpg" style="width:100%;height:260rpx;"></image>
+</navigator>
+</view>
+<!-- 头部结束 -->
+<navigator url='../top250/top250' hover-class="none">
+<view class="banner">
+<view class="banner1"><image src="../../image/top250.png" style="width:100%;height:100%;"></image></view>
+<view class="banner2">
+<view class="banner2_1">1.肖申克的救赎 9.6分</view>
+<view class="banner2_1">2.霸王别姬 9.6分</view>
+<view class="banner2_1">3.这个杀手不太冷 9.4分</view>
+</view>
+</view>
+</navigator>
+
+<navigator url='../top250/top250' hover-class="none">
+<view class="banner">
+<view class="banner1"><image src="../../image/pingfen.png" style="width:100%;height:100%;"></image></view>
+<view class="banner2">
+<view class="banner2_1">1.头号玩家 8.7分</view>
+<view class="banner2_1">2.三块广告牌 8.7分</view>
+<view class="banner2_1">3.小偷家族 8.7分</view>
+</view>
+</view>
+</navigator>
+
+<navigator url='../top250/top250' hover-class="none">
+<view class="banner">
+<view class="banner1"><image src="../../image/huayu.png" style="width:100%;height:100%;"></image></view>
+<view class="banner2">
+<view class="banner2_1">1.我不是药神 9分</view>
+<view class="banner2_1">2.大佛普拉斯 8.7分</view>
+<view class="banner2_1">3.红海行动 8.3分</view>
+</view>
+</view>
+</navigator>
+
+<navigator url='../top250/top250' hover-class="none">
+<view class="banner">
+<view class="banner1"><image src="../../image/lengmen.png" style="width:100%;height:100%;"></image></view>
+<view class="banner2">
+<view class="banner2_1">1.巴斯特 . 斯克鲁格斯的歌谣 8.5分</view>
+<view class="banner2_1">2.冒牌上尉 8.5分</view>
+<view class="banner2_1">3.阿德尔曼夫妇 8.3分</view>
+</view>
+</view>
+</navigator>
+
+<navigator url='../top250/top250' hover-class="none">
+<view class="banner" style="margin-bottom: 160rpx;">
+<view class="banner1"><image src="../../image/kehuan.png" style="width:100%;height:100%;"></image></view>
+<view class="banner2">
+<view class="banner2_1">1.盗梦空间 9.3分</view>
+<view class="banner2_1">2.机器人总动员 9.2分</view>
+<view class="banner2_1">3.星际穿越 9.2分</view>
+</view>
+</view>
+</navigator>
+<!-- 尾部结束 -->
+<!-- <van-tabbar
+  active="{{ active }}"
+  active-color="#07c160"
+  inactive-color="#000"
+  bind:change="onChange"
+>
+  <van-tabbar-item icon="goods-collect" bindtap="shouye">首页</van-tabbar-item>
+  <van-tabbar-item icon="tv-o" bindtap="bangdan">榜单</van-tabbar-item>
+  <van-tabbar-item icon="friends-o" bindtap="wode">我的</van-tabbar-item>
+</van-tabbar> -->
+<!-- 标签栏结束 -->

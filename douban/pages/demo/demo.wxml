@@ -1,0 +1,78 @@
+<view class="sousuo"><input type="text" placeholder="搜索"></input></view>
+<view class="Cinema">
+    <text>影院热映</text>
+    <navigator url='../index/index' hover-class="none">查看更多 ></navigator>
+</view>
+<scroll-view scroll-x="true" class="gao">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subject3}}"  wx:key="subject3">
+      <!-- navigator：页面跳转链接 -->
+      <view bindtap='bindAaa' data-newsid="{{item.id}}" data-name="{{item.title}}">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <text>{{item.title}}</text>
+        <van-rate value="{{ value }}" bind:change="onChange" size="{{12}}" />
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 影院热映结束 -->
+<view class="Cinema">
+    <text>豆瓣热门</text>
+    <navigator url='../index/index' hover-class="none">查看更多 ></navigator>
+</view>
+<scroll-view scroll-x="true" class="gao">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subject}}"  wx:key="subject">
+      <!-- navigator：页面跳转链接 -->
+      <view bindtap='bindAaa' data-newsid="{{item.id}}" data-name="{{item.title}}">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <text>{{item.title}}</text>
+        <van-rate value="{{ value }}" bind:change="onChange" size="{{12}}" />
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 豆瓣热门结束 -->
+<view class="Cinema">
+    <text>即将上映</text>
+    <navigator url='../index/index' hover-class="none">查看更多 ></navigator>
+</view>
+<scroll-view scroll-x="true" class="gao">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subject2}}"  wx:key="subject2">
+      <!-- navigator：页面跳转链接 -->
+      <view bindtap='bindAaa' data-newsid="{{item.id}}" data-name="{{item.title}}">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <text>{{item.title}}</text>
+        <van-rate value="{{ value }}" bind:change="onChange" size="{{12}}" />
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 即将上映结束 -->
+<view class="Cinema">
+    <text>近期热门剧集</text>
+    <navigator url='../index/index' hover-class="none">查看更多 ></navigator>
+</view>
+<scroll-view scroll-x="true" class="gao">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subject3}}"  wx:key="subject3">
+      <!-- navigator：页面跳转链接 -->
+      <view bindtap='bindAaa' data-newsid="{{item.id}}" data-name="{{item.title}}">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <text>{{item.title}}</text>
+        <van-rate value="{{ value }}" bind:change="onChange" size="{{12}}" />
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- <van-tabbar
+  active="{{ active }}"
+  active-color="#07c160"
+  inactive-color="#000"
+  bind:change="onChange"
+>
+  <van-tabbar-item icon="goods-collect">首页</van-tabbar-item>
+  <van-tabbar-item icon="tv-o" bindtap="bangdan">榜单</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">我的</van-tabbar-item>
+</van-tabbar> -->

@@ -1,0 +1,68 @@
+.sousuo{
+  background: #67BA62;
+  padding-bottom: 15px;
+}
+.sousuo input{
+  margin: 0 auto;
+  background:#fff;
+  height: 25px;
+  letter-spacing: 10px;
+  width: 95%;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius:2px; 
+}
+/* 影院热映 */
+.gao{
+  margin-bottom: 20px;
+}
+.Cinema{
+  float: left;
+  width: 100%;
+  height: 60rpx;
+  /* background: #f90; */
+  margin: 20rpx auto 0;
+  font-family: "黑体";
+}
+.Cinema text:nth-child(1){
+  margin-left: 3%;
+  font-size: 36rpx;
+}
+.Cinema navigator:nth-child(2){
+  float: right;
+  color: #67ba62;
+  margin-right: 3%;
+  font-size: 33rpx;
+}
+/* 图片滑动 */
+.uploadWrap {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 330rpx;
+}
+.upload_Item {
+  float: left;
+  width: 200rpx;
+  height: 330rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+.upload_Item_img {
+  float: left;
+  width: 170rpx;
+  height: 250rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item text {
+  display: inline-block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width: 160rpx;
+  font-size: 26rpx; 
+  text-align: center;
+}

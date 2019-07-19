@@ -1,0 +1,128 @@
+<view class="top" style="background-image: url(../../image/pingfenbanner.png);">
+	<view class="top1">
+		<view class="top1_left">
+			<text>看过0部</text>
+			<text> / 共10部</text>
+		</view>
+		<view class="top1_right">
+			<van-button round type="danger">生成海报</van-button>
+		</view>
+	</view>
+	<view class="top2">
+		<text>评分最高华语电影</text>
+		<text>豆瓣2018年度电影榜单</text>
+	</view>
+	<view class="top3">
+		<van-row>
+			<van-col span="8" custom-class="top3_left">
+				<image src="../../image/yaoshen.png"></image>
+			</van-col>
+			<van-col span="7" custom-class="top3_m">
+				<view>我不是药神</view>
+				<view>豆瓣评分</view>
+				<view>9.0</view>
+				<!-- <view>
+					<van-rate value="{{ value }}" bind:change="onChange" size="8" />
+				</view> -->
+			</van-col>
+			<van-col span="9" custom-class="top3_right">
+				<view class="top3_right1">
+					<van-icon name="star-o" />
+					<text>看过</text>
+				</view>
+			</van-col>
+		</van-row>
+	</view>
+  <view class="top4">
+  <text>"你敢保证你一辈子不得病？"纯粹、直接、有力！常常感叹：电影只能是电影。但是没看到这样的佳作，有感慨：电影不只是电影！由衷的希望这部电影大卖！。。。--王帅康</text>
+  </view>
+</view>
+<!-- 头部结束 -->
+<view class="content">
+<van-row>
+  <van-col span="8" custom-class="content1" wx:for="{{subject3}}" wx:for-index="index" wx:key="subject3">
+    <text>No.{{index+1}}</text>
+    <image src="{{item.images.large}}"></image>
+    <text class="content1_1">{{item.title}}</text>
+    <view class="content1_2">
+     <van-rate value="{{ item.rating.average/1.8 }}" bind:change="onChange" size="{{8}}" />
+      <text>{{item.rating.average}}</text>
+    </view>
+    <view class="content1_3"><van-icon name="star-o" /> 看过</view>
+  </van-col>
+</van-row>
+</view>
+<view class="huibian"></view>
+<!-- 内容区结束 -->
+<view class="quanbu">
+  <text>更多2018年度分榜</text>
+  <view class="quanbu1">
+    <text>全部</text>
+    <van-icon name="arrow" />
+  </view>
+</view>
+<!-- 全部结束 -->
+<view class="gengduo">
+<van-row>
+  <van-col span="12" custom-class="gengduo1">
+     <view class="gengduo1_1" style="background-image: url(../../image/tu1.png);">
+       <text>评分最高</text>
+       <text>外语电影</text>
+     </view>
+     <view class="gengduo1_2">
+       <van-icon name="like" />
+       <text>看完了</text>
+     </view>
+  </van-col>
+  <van-col span="12" custom-class="gengduo2">
+       <view class="gengduo1_1" style="background-image: url(../../image/tu2.png);">
+       <text>最受关注</text>
+       <text>院线电影</text>
+     </view>
+     <view class="gengduo1_2">
+       <van-icon name="like" />
+       <text>看完了</text>
+     </view>
+  </van-col>
+  <van-col span="12" custom-class="gengduo1">
+     <view class="gengduo1_1" style="background-image: url(../../image/tu3.png);">
+       <text>最受关注</text>
+       <text>非院线电影</text>
+     </view>
+     <view class="gengduo1_2">
+       <van-icon name="like" />
+       <text>看完了</text>
+     </view>
+  </van-col>
+  <van-col span="12" custom-class="gengduo2">
+       <view class="gengduo1_1" style="background-image: url(../../image/tu4.png);">
+       <text>评分最高</text>
+       <text>韩国电影</text>
+     </view>
+     <view class="gengduo1_2">
+       <van-icon name="like" />
+       <text>看完了</text>
+     </view>
+  </van-col>
+  <van-col span="12" custom-class="gengduo1">
+     <view class="gengduo1_1" style="background-image: url(../../image/tu5.png);">
+       <text>评分最高</text>
+       <text>日本电影</text>
+     </view>
+     <view class="gengduo1_2">
+       <van-icon name="like" />
+       <text>看完了</text>
+     </view>
+  </van-col>
+  <van-col span="12" custom-class="gengduo2">
+       <view class="gengduo1_1" style="background-image: url(../../image/tu6.png);">
+       <text>评分最高</text>
+       <text>欧洲电影</text>
+     </view>
+     <view class="gengduo1_2">
+       <van-icon name="like" />
+       <text>看完了</text>
+     </view>
+  </van-col>
+</van-row>
+</view>

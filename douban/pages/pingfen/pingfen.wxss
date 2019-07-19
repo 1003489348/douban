@@ -1,0 +1,191 @@
+.top{
+  width: 100%;
+  background-size: 100% 100%;
+  height: 1050rpx;
+}
+.top1{
+  width: 95%;
+  margin: 0 auto;
+  font-size: 26rpx;
+  padding-top:30rpx; 
+}
+.top1_left{
+  float: left;
+  color: #ccc;
+}
+.top1_left text:nth-child(1){
+  color: #fff;
+}
+.top1_right{
+  float: right;
+}
+.top1_right button{
+  background: rgb(240, 185, 67);
+  border: none;
+  color: rgb(15, 15, 15);
+  line-height: 60rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+}
+.top2{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 200rpx;
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  font-size: 58rpx;
+  color: #fff;
+  letter-spacing: 4rpx;
+  margin-bottom: 200rpx;
+}
+.top2 text:nth-child(2){
+  font-size: 32rpx;
+  letter-spacing: 14rpx;
+  margin-top: 10rpx;
+}
+.top3{
+  width: 95%;
+  margin: 0 auto;
+}
+.top3_left{
+  width: 100%;
+  height: 100%;
+}
+.top3_left image{
+  width: 200rpx;
+  height: 250rpx;
+}
+.top3_m{
+  font-size: 34rpx;
+  color: #fff;
+  letter-spacing: 2rpx;
+}
+.top3_m view:nth-child(2){
+  font-size: 20rpx;
+  color: #ccc;
+  margin-top:30rpx;
+  margin-bottom:30rpx;
+}
+.top3_m view:nth-child(3){
+  font-size: 60rpx;
+  font-weight: 700;
+  margin-left: 20rpx;
+}
+.top3_m view:nth-child(4){
+ 
+}
+.top3_right1{
+  background: rgb(180, 179, 179,0.1);
+  width: 130rpx;
+  height: 50rpx;
+  position: relative;
+  left: 90rpx;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  color:  rgb(240, 185, 67);
+}
+.top4{
+  width: 95%;
+  font-size: 25rpx;
+  color: #ccc;
+  line-height: 36rpx;
+  margin:0 auto;
+  margin-top: 30rpx;
+}
+/* 头部样式结束 */
+.content{
+  width:95%;
+  margin: 0 auto; 
+  margin-top: 30rpx;
+}
+.content1{
+  display: flex;
+  flex-direction:column;
+  color: #ccc;
+  margin-bottom: 30rpx;
+}
+.content1 image{
+  width: 200rpx;
+  height: 280rpx;
+  margin-top: 10rpx;
+  border-radius: 5rpx;
+  margin-bottom: 15rpx;
+}
+.content1_1{
+  font-size: 24rpx;
+  color: #000;
+  font-weight:100;
+}
+.content1_2{
+  display: flex;
+  flex-direction:row; 
+}
+.content1_2 text{
+  font-size: 20rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+}
+.content1_3{
+  color:  rgb(240, 185, 67);
+  font-size: 28rpx;
+  text-align: center;
+  border-top:2rpx dashed #ccc; 
+  border-bottom:2rpx dashed #ccc; 
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-top: 30rpx;
+  width: 90%;
+}
+.huibian{
+  width: 100%;
+  height: 20rpx;
+  background: #eee;
+}
+.quanbu{
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 70rpx;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.quanbu text{
+  float: left;
+}
+.quanbu view{
+  float: right;
+}
+.quanbu1 text{
+  font-size: 26rpx;
+}
+.gengduo{
+  width: 95%;
+  margin: 0 auto;
+}
+.gengduo1_1{
+  background-size: 100% 100%;
+  border-radius:10rpx;
+  width: 80%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 38rpx;
+  padding: 20rpx;
+  margin-bottom: 5rpx;
+}
+.gengduo1_1 text:nth-child(1){
+  font-size: 28rpx;
+  color: #ccc;
+}
+.gengduo1_2{
+  display: flex;
+  font-size: 24rpx;
+  color: #ccc;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+}
+.gengduo1_2 van-icon{
+  color: rgb(240, 185, 67);
+}

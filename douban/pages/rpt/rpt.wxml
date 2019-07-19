@@ -1,0 +1,68 @@
+<!--pages/rpt/rpt.wxml-->
+
+<view class='bg_box'>
+    <video binderror="videoErrorCallback" id="myVideo" src="https://sv1.doubanio.com/201907010818/b6b7ef7a5f0fbc485e757116f9756fb1/2017/mp4ieannual2018.mp4" objectFit='fill' autoplay='true' loop='true'  controls="{{false}}">
+    </video>
+</view>
+<view class="zhezhao" style="background-image: url(../../image/p3472.jpg);">
+	<view class="zhezhao1">
+		<image src="../../image/20190701101242.jpg"></image>
+	</view>
+</view>
+<view class="comn">
+  <text>2018分类榜单</text>
+</view>
+<navigator  url='../pingfen/pingfen' hover-class="none">
+<view class="comn_b">
+  <view class="comn_b_image" style="background-image: url(../../image/tu1.png);"
+>
+  <!-- <image class="comn_b_image" src="../../image/tu1.png"></image> -->
+    <text>评分最高</text>
+    <text>华语电影</text>
+  </view>
+  <view class="comn_b_item" style="background-image: url(../../image/tu2.png);">
+    <text>评分最高</text>
+    <text>外语电影</text>
+  </view>
+  <view class="comnn">
+    <text>看过0部/共10部</text>
+    <text>看过0部/共10部</text>
+  </view>
+</view>
+<view class="comn_b">
+  <view class="comn_b_image" style="background-image: url(../../image/tu3.png);"
+>
+  <!-- <image class="comn_b_image" src="../../image/tu1.png"></image> -->
+    <text>最受关注</text>
+    <text>院线电影</text>
+  </view>
+  <view class="comn_b_item" style="background-image: url(../../image/tu4.png);">
+    <text>最受关注</text>
+    <text>非院线电影</text>
+  </view>
+  <view class="comnn">
+    <text>看过0部/共10部</text>
+    <text>看过0部/共10部</text>
+  </view>
+</view>
+<view class="comn_b">
+  <view class="comn_b_image" style="background-image: url(../../image/tu5.png);"
+>
+  <!-- <image class="comn_b_image" src="../../image/tu1.png"></image> -->
+    <text>最受期待</text>
+    <text>华语佳作</text>
+  </view>
+  <view class="comn_b_item" style="background-image: url(../../image/tu6.png);">
+    <text>年度电影</text>
+    <text>冷门佳片</text>
+  </view>
+  <view class="comnn">
+    <text>看过0部/共10部</text>
+    <text>看过0部/共10部</text>
+  </view>
+</view>
+</navigator>
+<view class="footer">
+  -豆瓣2018年度电影榜单-
+</view>
+

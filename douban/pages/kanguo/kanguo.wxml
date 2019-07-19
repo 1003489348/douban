@@ -1,0 +1,5 @@
+
+  <text>点击星星评分</text>
+  <van-rate value="{{ value }}" size="{{ 25 }}" void-color="rgb(231, 231, 231)" bind:change="onChange" />
+  <textarea placeholder="写几句评价吧..."></textarea>
+  <button>确定</button>

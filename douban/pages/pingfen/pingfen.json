@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "评分最高华语电影",
+    "navigationBarTextStyle": "black"
+}

@@ -1,0 +1,10 @@
+   <view class="upload">
+      <view class="upload_Item" wx:for="{{subject3}}"  wx:key="subject3">
+          <!-- navigator：页面跳转链接 -->
+          <view bindtap='bindAaa' data-newsid="{{item.id}}">
+            <image class="upload_Item_img" src="{{item.images.large}}"></image>
+            <text>{{item.title}}</text>
+            <van-rate value="{{ value }}" bind:change="onChange" size="{{12}}" />
+          </view>
+        </view>
+   </view>

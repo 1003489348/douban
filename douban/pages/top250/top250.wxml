@@ -1,0 +1,43 @@
+  <view class="banner">
+	<image src="../../image/20190627143412.jpg"></image>
+</view>
+<view class="biaoti">
+	<text>看过0部</text><text>/ 共250部</text>
+	<van-button round type="danger">登录查看成就</van-button>
+</view>
+<!-- 头部结束开始api循环 -->
+<view wx:for="{{subject3}}" wx:for-index="index" wx:key="subject3">
+   <view class="content" bindtap='bindAaa' data-newsid="{{item.id}}" data-name="{{item.title}}">
+		<van-row>
+			<view span="24" class="content1">
+				<van-button size="mini">N0.{{index+1}}</van-button>
+			</view>
+			<!-- NO.1结束 -->
+			<van-row class="content2">
+				<van-col span="5" custom-class="content2_left">
+					<image src="{{item.images.large}}"></image>
+				</van-col>
+				<!-- 左边图片结束 -->
+				<van-col span="13" custom-class="content2_middle">
+					<text>{{item.title}}</text>
+					<view class="pingfen">
+             <van-rate value="{{ item.rating.average/1.8 }}" bind:change="onChange" size="{{8}}" />
+             <text>{{item.rating.average}}</text>
+          </view>
+					<text>美国 / {{item.genres}} / {{item.directors[0].name}} / {{item.casts[0].name}} {{item.casts[1].name}} {{item.casts[2].name}}</text>
+				</van-col>
+				<!-- 中间内容结束 -->
+				<van-col span="6" custom-class="content2_right">
+					<van-icon name="star-o" />
+					<text>看过</text>
+				</van-col>
+				<!-- 最右边结束 -->
+			</van-row>
+
+		</van-row>
+		<view class="footer">
+			<text>{{item.title}}</text>
+		</view>
+	</view>
+	<view class="huibian"></view>
+</view>

@@ -1,0 +1,143 @@
+<view class="toux">
+  <image src="../../image/touxiang.jpg"></image>
+  <view class="nicheng">
+    <text>想叫啥叫啥</text>
+    <text>在豆瓣一共标记看过</text>
+  </view>
+  <view class="shu">
+    <text>0</text>
+    <text>部影视</text>
+  </view>
+</view>
+<view class="guanyingtu">
+  <image src="../../image/guanyingtu.jpg"></image>
+</view>
+<view class="guanying-banner">
+  <image src="../../image/guanying-banner.jpg"></image>
+  <view class="biaoji">
+    <text>标记“看过”达到10部电影即可生成分析！</text>
+  </view>
+</view>
+<view class="pingjun">
+  <view class="meizhou">
+    <text>平均每周</text>
+    <text>— — 部电影</text>
+  </view>
+  <view class="huafei">
+    <text>这些年，为看电影电视剧花了</text>
+    <text>— — 小时</text>
+    <text>大约消费了</text>
+    <text>— — 元</text>
+  </view>
+</view>
+<view class="changkan">
+  <view class="cklx"><text>最常看的类型</text></view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you1"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you2"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you3"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you4"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you5"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you6"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you7"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you8"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you9"></view>
+  </view>
+  <view class="leixing">
+    <view class="zuobian"></view>
+    <view class="you10"></view>
+  </view>
+</view>
+<view class="yingpian">
+  <text>影片年份分布</text>
+  <view class="fenbutu">
+    <image src="../../image/fenbutu.jpg"></image>
+  </view>
+</view>
+<view class="daoyan">
+  <text>最常看的导演和演员</text>
+  <view class="renwubiao">
+    <view class="renwu">
+      <view class="topbg"></view>
+      <view class="bottombg"><text>- -</text></view>
+    </view>
+    <view class="renwu2">
+      <view class="topbg"></view>
+      <view class="bottombg"><text>- -</text></view>
+    </view>
+    <view class="renwu2">
+      <view class="topbg"></view>
+      <view class="bottombg"><text>- -</text></view>
+    </view>
+  </view>
+  <view class="renwubiao">
+    <view class="renwu">
+      <view class="topbg"></view>
+      <view class="bottombg"><text>- -</text></view>
+    </view>
+    <view class="renwu2">
+      <view class="topbg"></view>
+      <view class="bottombg"><text>- -</text></view>
+    </view>
+    <view class="renwu2">
+      <view class="topbg"></view>
+      <view class="bottombg"><text>- -</text></view>
+    </view>
+  </view>
+</view>
+<view class="diqu">
+  <text>影片地区分布</text>
+  <view class="liebiao">
+    <view class="quanquan">
+      <text>- -</text>
+    </view>
+    <view class="quanquan2">
+      <text>- -</text>
+    </view>
+    <view class="quanquan2">
+      <text>- -</text>
+    </view>
+  </view>
+  <view class="liebiao">
+    <view class="quanquan">
+      <text>- -</text>
+    </view>
+    <view class="quanquan2">
+      <text>- -</text>
+    </view>
+    <view class="quanquan2">
+      <text>- -</text>
+    </view>
+  </view>
+</view>
+<view class="guanying-banner">
+  <image src="../../image/guanying-banner.jpg"></image>
+  <view class="biaoji">
+    <text>标记“看过”达到10部电影即可生成分析！</text>
+  </view>
+</view>

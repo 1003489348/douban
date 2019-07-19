@@ -1,0 +1,31 @@
+/* 图片滑动 */
+.upload{
+  display: flex;
+  flex-wrap:wrap;
+  margin-top: 25rpx;
+
+}
+.upload_Item {
+  width: 200rpx;
+  height: 330rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin-left: 37rpx;
+  margin-bottom: 20rpx;
+}
+.upload_Item_img {
+  float: left;
+  width: 170rpx;
+  height: 250rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item text {
+  display: inline-block;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width: 160rpx;
+  font-size: 26rpx; 
+  text-align:center;
+}

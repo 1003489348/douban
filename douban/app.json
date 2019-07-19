@@ -1,0 +1,56 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-tabbar": "./dist/tabbar/index",
+    "van-icon": "./dist/icon/index",
+    "van-tabbar-item": "./dist/tabbar-item/index",
+    "van-rate": "./dist/rate/index",
+    "van-row": "./dist/row/index",
+    "van-col": "./dist/col/index",
+    "van-button": "./dist/button/index",
+    "van-progress": "./dist/progress/index"
+  },
+  "pages": [
+    "pages/demo/demo",
+    "pages/top250/top250",
+    "pages/logs/logs",
+    "pages/wode/wode",
+    "pages/kanguo/kanguo",
+    "pages/guanying/guanying",
+    "pages/xiangkan/xiangkan",
+    "pages/rpt/rpt",
+    "pages/jianjie/jianjie",
+    "pages/pingfen/pingfen",
+    "pages/top250_er/top250_er",
+    "pages/index/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/demo/demo",
+        "iconPath": "image/shouye.png",
+        "selectedIconPath": "image/shouye2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/bangdan.png",
+        "selectedIconPath": "image/bangdan2.png",
+        "text": "榜单"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#67BA62",
+    "navigationBarTitleText": "豆瓣评分",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

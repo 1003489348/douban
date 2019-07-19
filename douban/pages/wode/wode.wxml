@@ -1,0 +1,88 @@
+<view class="top" style="background-image: url(../../image/wodebeijing.png);">
+	<view class="top1">
+		<van-button round type="danger">登录</van-button>
+	</view>
+</view>
+<!-- 头部结束 -->
+<view class="content1">
+	<view>我的书影音</view>
+	<view>登录查看
+		<van-icon name="arrow" />
+	</view>
+</view>
+
+<navigator url='../guanying/guanying'>
+<view class="content2">
+	<view class="content2_left">
+		<image src="../../image/shipinzhuanti.png"></image>
+	</view>
+	<view class="content2_right">
+		<van-row>
+			<van-col span="9" class="content2_right1">
+				<view span="24" style="padding-bottom: 30rpx;">读书分析</view>
+				<view span="24"><text style="font-size:38rpx;">0</text> 看过</view>
+			</van-col>
+			<van-col span="8" class="content2_right2">
+				<view span="24" style="margin-top: 30rpx;">标记10本书</view>
+				<view span="24">开启读书分析</view>
+			</van-col>
+			<van-col span="7" class="content2_right3">
+				<view style="margin-top:50rpx;">
+					<van-button size="mini">立即开启</van-button>
+					<van-icon name="arrow"  />
+				</view>
+			</van-col>
+		</van-row>
+	</view>
+</view>
+</navigator>
+<navigator url='../guanying/guanying'>
+<view class="content2">
+	<view class="content2_left">
+		<image src="../../image/shu2.png"></image>
+	</view>
+	<view class="content2_right">
+		<van-row>
+			<van-col span="9" class="content2_right1">
+				<view span="24" style="padding-bottom: 30rpx;">音乐分析</view>
+				<view span="24"><text style="font-size:38rpx;">0</text> 看过</view>
+			</van-col>
+			<van-col span="8" class="content2_right2">
+				<view span="24" style="margin-top: 30rpx;">标记10张影片</view>
+				<view span="24">开启观影分析</view>
+			</van-col>
+			<van-col span="7" class="content2_right3">
+				<view style="margin-top:50rpx;">
+					<van-button size="mini">立即开启</van-button>
+					<van-icon name="arrow"  />
+				</view>
+			</van-col>
+		</van-row>
+	</view>
+</view>
+</navigator>
+<navigator url='../guanying/guanying'>
+<view class="content2">
+	<view class="content2_left">
+		<image src="../../image/yinyue.png"></image>
+	</view>
+	<view class="content2_right">
+		<van-row>
+			<van-col span="9" class="content2_right1">
+				<view span="24" style="padding-bottom: 30rpx;">观影分析</view>
+				<view span="24"><text style="font-size:38rpx;">0</text> 看过</view>
+			</van-col>
+			<van-col span="8" class="content2_right2">
+				<view span="24" style="margin-top: 30rpx;">标记10部影片</view>
+				<view span="24">开启观影分析</view>
+			</van-col>
+			<van-col span="7" class="content2_right3">
+				<view style="margin-top:50rpx;">
+					<van-button size="mini">立即开启</van-button>
+					<van-icon name="arrow"  />
+				</view>
+			</van-col>
+		</van-row>
+	</view>
+</view>
+</navigator>

@@ -1,0 +1,30 @@
+.top{
+  width: 95%;
+  margin: 0 auto;
+}
+.top image{
+  padding-bottom: 20rpx;
+}
+.banner{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.banner1{
+  width: 30%;
+  height: 200rpx;
+}
+.banner2{
+  width: 70%;
+  height: 180rpx;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  border: 2rpx solid #ccc;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.banner2_1{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}

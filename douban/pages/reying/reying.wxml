@@ -1,0 +1,40 @@
+<view class='wrap'>
+  <view class='banner'>
+    <image src="../../image/20190627143412.jpg" mode='aspectFill'></image>
+  </view>
+  <view class='top250-t'>
+    <view class='top250-title'>
+      <text>看过0部/ </text>
+      共250部
+      <button>登录查看成就</button>
+    </view>
+  </view>
+  <view class='top250-b' wx:for="{{subjects_top250}}" wx:for-index="index">
+    <view class='top250-list' bindtap='bindAaa' data-newsid="{{item.id}}">
+      <view class='pai'>No.{{index+1}}</view>
+        <view class='list-l'>
+          <image src='{{item.images.large}}'></image>
+          <view class='text'>
+            <text>{{item.title}}</text>
+            <view style="display:flex;">
+              <van-rate
+                readonly
+                value="{{ item.rating.average/2 }}"
+                bind:change="onChange"
+                size="10"
+              />
+              <text>{{item.rating.average}}</text>
+            </view>
+            <text>{{item.countries}}{{item.genres}}/{{item.directors[0].name}}/{{item.casts[0].name}} {{item.casts[1].name}} {{item.casts[2].name}}</text>
+          </view>
+          
+        </view>
+        <view class='list-r'>
+          <text>看过</text>
+        </view>
+        <view class='list-b'>
+          <text>{{item.durations}}</text>
+        </view>
+    </view>
+  </view>
+</view>

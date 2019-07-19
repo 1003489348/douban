@@ -1,0 +1,7 @@
+pages目录详情
+demo是首页
+index是查看更多
+logs是榜单
+wode是我的
+top250是top250页
+top250_er是top250详情页

@@ -1,0 +1,176 @@
+<!--pages/details/details.wxml-->
+<!-- 整个页面 -->
+<view class="body">
+  <view class="Nav">
+    <image class="Nav_Image" src="{{shuzu.images.large}}"></image>
+    <view class="Nav_Item">
+      <view class="Nav_Item_t">{{shuzu.aka[4]}}({{shuzu.year}})</view>
+      <view class="Nav_Item_z">{{shuzu.original_title}}({{shuzu.year}})</view>
+      <view class="Nav_Item_zz">{{shuzu.genres[0]}} {{shuzu.genres[1]}}/{{shuzu.countries}}/片长{{shuzu.durations}}</view>
+      <view class="Nav_Item_b">
+        <view class="Nav_Item_b_l">
+          <van-icon class="icon" name="like-o" color="rgb(255,172,42)" size="14px" /> 想看
+        </view>
+        <view class="Nav_Item_b_r">
+          <van-icon class="icon" name="star-o" color="rgb(255,172,42)" size="14px" /> 想看
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 豆瓣评分 -->
+  <view class="top" bindtap="bindViewTap">
+  <text class="top_text">豆瓣评分™</text>
+  <view class="top-center">
+    <view class="top-cent">
+      <view class="top-center-l">9.6</view>
+      <view class="star">
+        <van-rate size="10" value="{{ 5 }}" bind:change="onChange" />
+      </view>
+    </view>
+
+    <view class="top-rrr">
+      <!-- 第一块 -->
+      <view class="top-right">
+        <van-rate color="#A9A9A9" size="8" value="{{ 5 }}" bind:change="onChange" />
+        <view class="top-right-r">
+          <view class="top-right-b"></view>
+        </view>
+        <view> 84%</view>
+      </view>
+      <!-- 第二块 -->
+      <view class="top-right">
+        <van-rate color="#A9A9A9" count="{{ 4 }}" size="8" value="{{ 5 }}" bind:change="onChange" />
+        <view class="top-right-r">
+          <view style="width: 160rpx;" class="top-right-b"></view>
+        </view>
+        <view> 50%</view>
+      </view>
+      <!-- 第三块 -->
+      <view class="top-right">
+        <van-rate color="#A9A9A9" count="{{ 3 }}" size="8" value="{{ 5 }}" bind:change="onChange" />
+        <view class="top-right-r">
+          <view style="width: 20rpx;" class="top-right-b"></view>
+        </view>
+        <view> 05%</view>
+      </view>
+
+      <!-- 第四块 -->
+      <view class="top-right">
+        <van-rate color="#A9A9A9" count="{{ 2 }}" size="8" value="{{ 5 }}" bind:change="onChange" />
+        <view class="top-right-r">
+          <view style="width: 30rpx;" class="top-right-b"></view>
+        </view>
+        <view> 10%</view>
+      </view>
+
+      <!-- 第五块 -->
+      <view class="top-right">
+        <van-rate color="#A9A9A9" count="{{ 1 }}" size="8" value="{{ 5 }}" bind:change="onChange" />
+        <view class="top-right-r">
+          <view style="width: 10rpx;" class="top-right-b"></view>
+        </view>
+        <view> 01%</view>
+      </view>
+      <view class="top-bottom">
+        <view>146635人评分</view>
+      </view>
+    </view>
+  </view>
+</view>
+  <!-- 简介 -->
+  <view class="ment">
+    <view class="ment_t">简介</view>
+    <view class="ment_b {{ellipsis ? 'on' : ''}}">{{shuzu.summary}}</view>
+    <button class="ment_c" bindtap="ellipsis">展开</button>
+  </view>
+  <!-- 影人 -->
+  <view class="Filmmaker">
+    <view class="Filmmaker_t">影人</view>
+  </view>
+  <scroll-view class="scrool" scroll-x="true">
+    <view class="uploadWrap" scroll-x="true">
+      <view class="upload_Item" wx:for="{{subjects}}" wx:key="">
+        <!-- navigator：页面跳转链接 -->
+        <navigator url='../index/index' hover-class="none">
+          <image class="upload_Item_img" src="{{item.images.medium}}"></image>
+          <text>{{item.title}}</text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 预告片 -->
+  <view class="Filmmaker">
+    <view class="Filmmaker_t">预告片/剧照</view>
+  </view>
+  <scroll-view class="scrool" scroll-x="true">
+    <view class="uploadWrap" scroll-x="true">
+      <view class="upload_Item" wx:for="{{subjects1}}" wx:key="">
+        <!-- navigator：页面跳转链接 -->
+        <navigator url='../index/index' hover-class="none">
+          <image class="upload_Item_img" src="{{item.images.medium}}"></image>
+          <text>{{item.title}}</text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 短评 -->
+  <view class="duanping">
+    <view class="duanping_item">
+      <text>短评</text>
+      <text>全部 280812</text>
+    </view>
+    <view class="bod" wx:for="{{subjects3}}" wx:key="">
+  <view class="bod-top">
+    <image src="{{item.author.avatar}}"></image>
+    <view class="bod-top-r">
+      <view class="bod-top-r-txt">{{item.author.name}}</view>
+      <view class="bod-top-star">
+        <van-rate size="9" value="{{ 5 }}" bind:change="onChange" />{{item.created_at}}
+      </view>
+    </view>
+  </view>
+  <view class="bod-bod">
+    {{item.content}}
+    <view class="bod-bodystar">
+      <van-icon style="margin-right:10rpx;" size="11" name="star-o" />{{item.useful_count}}
+    </view>
+  </view>
+</view>
+  </view>
+  <!-- 喜欢 -->
+  <view class="Filmmaker">
+    <view class="Filmmaker_t">喜欢这部电影的人也喜欢</view>
+  </view>
+  <scroll-view class="scrool" scroll-x="true">
+    <view class="uploadWrap" scroll-x="true">
+      <view class="upload_Item" wx:for="{{subjects2}}" wx:key="">
+        <!-- navigator：页面跳转链接 -->
+        <navigator url='../index/index' hover-class="none">
+          <image class="upload_Item_img" src="{{item.images.medium}}"></image>
+          <text>{{item.title}}</text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 影评 -->
+  <view class="Filmmaker">
+    <view class="Filmmaker_t">影评</view>
+  </view>
+  <view class="bod" wx:for="{{subjects3}}" wx:key="">
+  <view class="bod-top">
+    <image src="{{item.author.avatar}}"></image>
+    <view class="bod-top-r">
+      <view class="bod-top-r-txt">{{item.author.name}}</view>
+      <view class="bod-top-star">
+        <van-rate size="9" value="{{ 5 }}" bind:change="onChange" />{{item.created_at}}
+      </view>
+    </view>
+  </view>
+  <view class="bod-bod">
+    {{item.content}}
+    <view class="bod-bodystar">
+      <van-icon style="margin-right:10rpx;" size="11" name="star-o" />{{item.useful_count}}
+    </view>
+  </view>
+</view>
+</view>
